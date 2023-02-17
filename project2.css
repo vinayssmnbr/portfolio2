@@ -23,7 +23,7 @@ body {
   min-height: 100%;
   line-height: 1.4;
   color: #222;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 .row::after,
 .clearfix::after {
@@ -50,6 +50,24 @@ body {
 .row{
   margin-left: -15px;
   margin-right: -15px;
+}
+.toggle_btn{
+  width:40px;
+  height: 30px;
+  display: none;
+  flex-direction: column;
+  justify-content:space-between;
+  cursor: pointer;
+  position: relative;
+}
+.toggle>span{
+  background: white;
+}
+.toggle_btn>span{
+  height: 2px;
+  display: inline-block;
+  background-color: white;
+  width: 100%;
 }
 .container {
   max-width: 1170px;
@@ -95,7 +113,7 @@ ul.navigation > li {
 }
 ul.navigation > li a {
   color: white;
-  padding: 16px;
+  /* padding: 16px; */
   float: left;
   text-transform: uppercase;
   border-radius: 8px;
@@ -105,26 +123,25 @@ ul.navigation > li a {
   font-weight: 500;
 }
 section {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 section.banner {
-  background-color: var(--primaryColor);;
+  background-color: var(--primaryColor);
   color: white;
-  padding-top: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-.banner-content {
+/* .banner-content {
 
-}
+} */
 .left-part h1 {
   font-size: 48px;
   font-weight: 700;
  
 }
-.left-part p {
+.col-6 .left-part p {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -156,9 +173,6 @@ section.banner {
   font-weight: 500;
   font-size: 16px;
 }
-/* .watch:hover i{
-    background-color: #0d6efd;
-} */
 .watch i {
   line-height: 1;
   color: #fff;
@@ -171,29 +185,12 @@ section.clients {
 background-color: #ddd;
   padding: 20px 0;
 }
-.clients-container {
-  width: 100%;
-  display: flex;
-  padding: 0 20px;
-  background-color: #dee2e6;
-}
-
-
-
 .clients img{
   filter:grayscale(100%);
   height: 40px;
 }
 /* About Us */
 
-/* section.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding: 20px 0;
-} */
 
 .text-center{
   text-align: center;
@@ -207,7 +204,7 @@ background-color: #ddd;
 
 .col-6 p {
   font-size: 16px;
-  font-family: sans-serif;
+
   color: #6c757d;
 }
 
@@ -230,7 +227,7 @@ h2.title {
   padding: 10px 25px;
   display: inline-block;
   font-size: 16px;
-  font-family: sans-serif;
+
   font-weight: 300;
   border-radius: 5px;
 }
@@ -243,15 +240,7 @@ h2.title {
 .greyBg {
   background-color: #f3f5fa;
 }
-/* .left-part1,
-.right-part1 {
-  width: 50%;
-  float: left;
-  padding: 40px;
-} */
-.right-part1 img {
-  width: 100%;
-}
+
 .left-part1 h1 {
   font-weight: 400;
   font-size: 30px;
@@ -301,61 +290,13 @@ h2.title {
 .fas {
   float: right;
 }
-.eum-progress{
 
-  margin: 4px;
-  padding:10px 0;
-  width: 100%;
-  display: block;
-
-
-}
-.skill-html{
-  text-align: right;
-  color: white;
-  background-color: #37517e;
-  padding: 0;
-  font-size: 10px;
-  width: 100%;
- 
-}
-
-.skill-css{
-  width: 90%;
-  text-align: right;
-  color: white;
-  background-color: #37517e;
-  padding: 0;
-  font-size: 10px;
-}
-.skill-javascript{
-  text-align: right;
-  color: white;
-  background-color: #37517e;
-  width: 75%;
-  padding: 0;
-  font-size: 10px;
-}
-.skill-photoshop{
-  text-align: right;
-  color: white;
-  background-color: #37517e;
-  width: 55%;
-  padding: 0;
-  font-size: 10px;
-}
 /* eum-[art-lower */
-section.eum-part-lower {
-  width: 100%;
-  float: left;
-  padding: 50px;
-  background-color: #fff;
-}
 .right-part1 h1 {
   font-weight: 700;
   font-size: 32px;
   color: #37517e;
-  font-family: "Poppins", sans-serif;
+ 
 }
 .right-part1 p{
   font-weight: 400;
@@ -363,31 +304,47 @@ section.eum-part-lower {
   color: #6c757d;
 }
 
-/* Services */
-section.service{
-  background-color: #f3f5fa;
-  display: flex;
-  flex-direction: column;
+.skill {
+  background-color: #ddd;
+  padding: 1%;
+  text-align: right;
+  font-size: 20px;
+  margin-top: 10px;
   width: 100%;
-  padding: 50px 0;
+  position: relative;
+}
+.skill span{
 
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  background-color: #37517e;
+  ;
 }
 
-.service-container{
-  width:100%;
-  display: flex;
-  padding:0 25px;
-  border: 1px solid red;
-  text-align: center;
 
-}
-.service-title{
-  text-align: center;
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
+.eum-progress .last{
   color: #37517e;
+  float:right;
+  font-size: 14px;
+}
+.eum-progress .first{
+  color: #37517e;
+  font-size: 14px;
+}
+.eum-progress{
+  padding: 10px;
+}
+/* Services */
 
+
+.content{
+
+  background-color: #fff;
+  padding: 50px 30px;
+  box-shadow: 0px 0 25px 0 rgb(0 0 0 / 10%);
+  margin-top: 30px;
 }
 .service-line{
   width: 150px;
@@ -398,29 +355,108 @@ section.service{
   display: flex;
   margin-left: 44%;
 }
-.col-3{
-  width:100%;
-  border: 1px solid green;
-  margin: 20px;
-  background-color: #fff;
-  padding: 50px 30px;
-  text-align: left;
-
-}
 .para{
   margin: 30px 0 10px 0;
   text-align: center;
   color: #6c757d;
   padding: 0 38px;
-  font-family: sans-serif;
+
   font-size: 16px;
+ }
+
+.service-icon{
+  margin-bottom: 20px;
 }
-.col-3 h4{
-  margin-bottom: 10px;
+.service-icon i{
+ font-size: 30px;
+ color:var(--primaryColor )
 }
 
+/* action */
 
+.action {
+  background-image: url(https://bootstrapmade.com/demo/templates/Arsha/assets/img/cta-bg.jpg);
+  width: 100%;
+  background-size: cover;
+  min-height: 350px;
+  background-attachment: fixed;
+  position: relative;
+}
 
+.action::after {
+  content: '';
+  background-color: #37517f;
+inset: 0;
+opacity: 0.7;
+position: absolute;
+}
+.action-banner:after{
+  content:'';
+
+}
+.action h1 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  opacity: 1;
+  padding-top: 80px;
+
+}
+
+.action p {
+  padding-top: 20px;
+  color: #fff;
+}
+.action-tab{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.action-btn {
+  float: right;
+  padding-top: 120px;
+}
+
+.btn-action {
+
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+
+  background-color: #37517f;
+  border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  height: 55px;
+}
+
+.btn-action:hover {
+  background-color: #47b2e4;
+  ;
+}
+
+/* team */
+.team-content{
+  padding:30px ;
+}
+.pic img{
+  width:145.18px;
+  border-radius: 50%;
+}
+.col-6 .team-content{
+  border: 1px solid red;
+}
+.banner-content > .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /* @media print{
   .break{
     page-break-after: always;
@@ -428,12 +464,110 @@ section.service{
   .header{
     display: none;
   }
+}*/
+@media  (max-width: 767px){
+section.banner{
+  flex-direction: row-reverse;
 }
-@media only screen and (max-width: 768px){
-  .header{
-    display: block;
+.mobile100{
+  width: 100%;
+}
+.banner-content > .row {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.left-part h1 {
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+}
+.left-part p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+.row .col-2{
+  width: 50%;
+  padding:10px;
+} 
+.about-tab{
+  width: 100%;
+  padding: 20px;
+}
+.eum-tab{
+  width:100%;
+}
+.eum-reverse{
+  flex-direction: column-reverse;
+  display: flex;
+}
+.service-tab{
+  width: 100%;
+  padding: 0 50px;
+}
+.action-tab{
+  width: 100%;
+}
+.watch{
+  float:left
+}
+  .toggle_btn{
+    display: flex;
   }
-  .nav{
-    display: block;
+  ul.navigation{
+    /* display: none; */
+    position:absolute;
+    background: #fff;
+    border-radius: 10px;
+    left: 0px;
+    right: 0px;
+    top: 100px;
+    width: 280px;
+    height: 100vh;
+    transform: translateX(-280px);
+    transition:0.5s;
+  
+
   }
-} */
+  .navigation{
+    background: white;
+    color:black;
+
+  }
+  .navigation>li{
+    width: 100%;
+    border-radius: 10px;
+
+  }
+  .navigation>li>a{
+    color:black !important
+  }
+  .toggle_btn.toggle + ul.navigation{
+    display:block;
+    transform:translateX(0px);
+  }
+  .toggle_btn.toggle>span:nth-child(1){
+    position: absolute;
+    rotate: 45deg;
+    top: 10px;
+    right: 10px;
+
+  }
+   .toggle_btn.toggle>span:nth-child(2){
+    opacity:0;
+
+  } 
+  .toggle_btn.toggle>span:nth-child(3){
+    rotate:-45deg;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: translateX(0px);
+
+  } 
+
+  }
+
+
+
+
