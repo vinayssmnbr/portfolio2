@@ -23,14 +23,30 @@
                     <span></span>
                 </div>
                 <ul class="navigation">
-                    <li><a href="">Home</a></li>
+                    <li><a class="home" href="">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#service">Service</a></li>
                     <li><a href="">Portfolio</a></li>
                     <li><a href="#team">Team</a></li>
-                    <li><a href="">Drop Down</a> </li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Get Started</a></li>
+                    <li><a href="">Drop Down <i class='fas fa-angle-down'></i></a>
+                        <!-- <ul>
+                            <li><a href="#">Drop Down 1</a></li>
+                            <li><a href="#">Deep Drop Down<i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                                <ul>
+                                    <li><a href="#">Deep Drop Down 1</a></li>
+                                    <li><a href="#">Deep Drop Down 2</a></li>
+                                    <li><a href="#">Deep Drop Down 3</a></li>
+                                    <li><a href="#">Deep Drop Down 4</a></li>
+                                    <li><a href="#">Deep Drop Down 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Drop Down 2</a></li>
+                            <li><a href="#">Drop Down 3</a></li>
+                            <li><a href="#">Drop Down 4</a></li>
+                        </ul>             -->
+                    </li>
+                    <li><a href="#contact-info">Contact</a></li>
+                    <li><a class="nav-get" href="">Get Started </a></li>
                 </ul>
             </nav>
         </div>
@@ -39,9 +55,9 @@
     <section class="banner">
         <div class="container banner-content">
             <div class="row">
-                <div class="col-6 mobile100">
+                <div class="col-6 banner-tab banner-mobile ">
                     <div class="left-part">
-                        <h1>Better Solution For Your Business</h1>
+                        <h2>Better Solution For Your Business</h2>
                         <p>We are team of talented designers making websites with Bootstrap</p>
                         <div class="btn">
                             <a class="started" href="#">Get Started</a>
@@ -56,7 +72,7 @@
                 </div>
             </div>
     </section>
-    <section class="clients text-center">
+    <section class="clients text-center client-mobile">
         <div class="container">
             <div class="row">
                 <div class="col-2">
@@ -82,7 +98,7 @@
     </section>
     <section class="about " id="about">
         <div class="container">
-            <h2 class="title">ABOUT US</h2>
+            <h1 class="title">ABOUT US</h1>
             <div class="row">
 
                 <div class="col-6 about-tab">
@@ -116,7 +132,7 @@
             <div class="row eum-reverse">
                 <div class="col-6 eum-tab">
                     <div class="left-part1">
-                        <h1>Eum ipsam laborum deleniti <b>velit pariatur architecto aut nihil</b></h1>
+                        <h2>Eum ipsam laborum deleniti <b>velit pariatur architecto aut nihil</b></h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore
                             et dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
@@ -150,7 +166,7 @@
                 </div>
                 <div class="col-6 eum-tab">
                     <div class="right-part1">
-                        <h1>Voluptatem dignissimos provident quasi corporis voluptates</h1>
+                        <h2>Voluptatem dignissimos provident quasi corporis voluptates</h2>
                         <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                                 ut
                                 labore
@@ -184,7 +200,7 @@
     </section>
     <section class="service greyBg" id="service">
         <div class="container">
-            <h2 class="title">SERVICES</h2>
+            <h1 class="title">SERVICES</h1>
             <div class="para">
                 <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
                     consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
@@ -230,12 +246,12 @@
             <div class="container">
                 <div class="row">
                     <div class="col-8 action-tab">
-                        <h1>Call To Action</h1>
+                        <h2>Call To Action</h2>
                         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
                             mollit anim id est laborum.</p>
                     </div>
-                    <div class="col-4">
+                    <div class="col-4 action-button-tab">
                         <a href="" class="btn-action">Call To Action</a>
                     </div>
                 </div>
@@ -245,7 +261,7 @@
 
     <section class="team greyBg" id="team">
         <div class="container">
-            <h2 class="title head">TEAM</h2>
+            <h1 class="title head">TEAM</h1>
             <p class="team-para">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
                 quidem. Sit sint
                 consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
@@ -331,60 +347,240 @@
     </section>
     <section class="pricing">
         <div class="container">
-            <h2 class="title">PRICING</h2>
+            <h1 class="title">PRICING</h1>
             <div class="pricing-content">
                 <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
                     consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
                     fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
             <div class="row">
-                <div class="col-4">
+                <div class="col-4 pricing-tab">
                     <div class="box">
-                    <h3>Free Plan</h3>
-                    <h4><sup>$</sup>0<span>Per month</span></h4>
-                    <ul>
-                        <li><i style="font-size:24px" class="fa">&#xf00c;</i> Quam adipiscing vitae proin</li>
-                        <li><i style="font-size:24px" class="fa">&#xf00c;</i> Nec feugiat nisl pretium</li>
-                        <li><i style="font-size:24px" class="fa">&#xf00c;</i> Nulla at volutpat diam uteera</li>
-                    </ul>
-                    <span><i style="font-size:24px" class="fa">&#xf00d;</i> Pharetra massa massa ultricies<br></span>
-                    <span><i style="font-size:24px" class="fa">&#xf00d;</i> Massa ultricies mi quis hendrerit</span>
-                </div>
-                <a href="">Get Started</a>
-            </div>
-            <div class="col-4">
-                <div class="box">
-                    <h3>Business Plan</h3>
-                    <h4><sup>$</sup>29<span>Per month</span></h4>
-                    <ul>
-                        <li><i style="font-size:24px" class="fa">&#xf00c;</i> Quam adipiscing vitae proin</li>
-                        <li><i style="font-size:24px" class="fa">&#xf00c;</i> Nec feugiat nisl pretium</li>
-                        <li><i style="font-size:24px" class="fa">&#xf00c;</i> Nulla at volutpat diam uteera</li>
-                        <li><i style="font-size:24px" class="fa">&#xf00c;</i> Pharetra massa massa ultricies</li>
-                        <li><i style="font-size:24px" class="fa">&#xf00c;</i> Massa ultricies mi quis hendrerit</li>
-                    </ul>
-                </div>
-                <a href="">Get Started</a>
+                        <h3>Free Plan</h3>
+                        <h4><sup>$</sup>0<br><span>Per month</span></h4>
+                        <ul class="pricing-list">
+                            <li><i style="font-size:24px" class="fa">&#xf00c;</i> Quam adipiscing vitae proin</li><br>
+                            <li><i style="font-size:24px" class="fa">&#xf00c;</i> Nec feugiat nisl pretium</li><br>
+                            <li><i style="font-size:24px" class="fa">&#xf00c;</i> Nulla at volutpat diam uteera</li><br>
+                            <span class="cross"><i style="font-size:24px" class="fa">&#xf00d;</i> Pharetra massa massa
+                                ultricies<br><br></span>
+                            <span class="cross"><i style="font-size:24px" class="fa">&#xf00d;</i> Massa ultricies mi
+                                quis hendrerit</span>
+                        </ul>
+                        <a href="">Get Started</a>
 
-            </div>
-            <div class="col-4">
-                <div class="box">
-                    <h3>Developer Plan</h3>
-                    <h4><sup>$</sup>49<span>Per month</span></h4>
-                    <ul>
-                        <li><i style="font-size:24px" class="fa">&#xf00c;</i> Quam adipiscing vitae proin</li>
-                        <li><i style="font-size:24px" class="fa">&#xf00c;</i> Nec feugiat nisl pretium</li>
-                        <li><i style="font-size:24px" class="fa">&#xf00c;</i> Nulla at volutpat diam uteera</li>
-                        <li><i style="font-size:24px" class="fa">&#xf00c;</i> Pharetra massa massa ultricies</li>
-                        <li><i style="font-size:24px" class="fa">&#xf00c;</i> Massa ultricies mi quis hendrerit</li>
-                    </ul>
+
+
+                    </div>
+                </div>
+                <div class="col-4 pricing-tab">
+                    <div class="box">
+                        <h3>Business Plan</h3>
+                        <h4><sup>$</sup>29<br><span>Per month</span></h4>
+                        <ul class="pricing-list">
+                            <li><i style="font-size:24px" class="fa">&#xf00c;</i> Quam adipiscing vitae proin</li><br>
+                            <li><i style="font-size:24px" class="fa">&#xf00c;</i> Nec feugiat nisl pretium</li><br>
+                            <li><i style="font-size:24px" class="fa">&#xf00c;</i> Nulla at volutpat diam uteera</li><br>
+                            <li><i style="font-size:24px" class="fa">&#xf00c;</i> Pharetra massa massa ultricies</li>
+                            <br>
+                            <li><i style="font-size:24px" class="fa">&#xf00c;</i> Massa ultricies mi quis hendrerit</li>
+                        </ul>
+                        <a href="">Get Started</a>
+
+                    </div>
 
                 </div>
-                <a href="">Get Started</a>
+                <div class="col-4 pricing-tab">
+                    <div class="box">
+                        <h3>Developer Plan</h3>
+                        <h4><sup>$</sup>49<br><span>Per month</span></h4>
+                        <ul class="pricing-list">
+                            <li><i style="font-size:24px" class="fa">&#xf00c;</i> Quam adipiscing vitae proin</li><br>
+                            <li><i style="font-size:24px" class="fa">&#xf00c;</i> Nec feugiat nisl pretium</li><br>
+                            <li><i style="font-size:24px" class="fa">&#xf00c;</i> Nulla at volutpat diam uteera</li><br>
+                            <li><i style="font-size:24px" class="fa">&#xf00c;</i> Pharetra massa massa ultricies</li>
+                            <br>
+                            <li><i style="font-size:24px" class="fa">&#xf00c;</i> Massa ultricies mi quis hendrerit</li>
+                        </ul>
+                        <a href="">Get Started</a>
 
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
+    <section class="frequent greyBg ">
+        <div class="container">
+            <h1 class="title">FREQUENTLY ASKED QUESTIONS</h1>
+            <div class="frequent-content">
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                    consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
+                    fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+            <div class="frequent-accordian eum-tab">
+                <button class="accordion1"><span><i style="font-size:24px" class="fa">&#xf059;</i></span> Non
+                    consectetur a
+                    erat nam at lectus urna duis? <i style='font-size:15px' class='fas'>&#xf107;</i></button>
+                <button class="accordion2"><span><i style="font-size:24px" class="fa">&#xf059;</i></span> Feugiat
+                    scelerisque varius morbi enim nunc? <i style='font-size:15px' class='fas'>&#xf107;</i></button>
+                <button class="accordion3"><span><i style="font-size:24px" class="fa">&#xf059;</i></span> Dolor sit
+                    amet
+                    consectetur adipiscing elit? <i style='font-size:15px' class='fas'>&#xf107;</i></button>
+                <button class="accordion3"><span><i style="font-size:24px" class="fa">&#xf059;</i></span> Tempus quam
+                    pellentesque nec nam aliquam sem et tortor consequat?<i style='font-size:15px'
+                        class='fas'>&#xf107;</i></button>
+                <button class="accordion3"><span><i style="font-size:24px" class="fa">&#xf059;</i></span> Tortor vitae
+                    purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i
+                        style='font-size:15px' class='fas'>&#xf107;</i></button>
+            </div>
         </div>
+    </section>
+    <section class="contact" id="contact-info">
+        <div class="container">
+            <h1 class="title">CONTACT</h1>
+            <div class="contact-content">
+                <p>CONTACT
+                    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit
+                    sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
+                    Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+            <div class="row">
+                <div class="col-5 contact-tab">
+                    <div class="contact-left">
+                        <div class="location">
+                            <i class="fa fa-map-marker"></i>
+
+                            <h4>Location :</h4>
+                            <p>A108 Adam Street, New York, NY 535022</p>
+                        </div>
+                        <div class="email">
+                            <i class="fa fa-envelope"></i>
+                            <h4>Email :</h4>
+                            <p>info@example.com</p>
+                        </div>
+                        <div class="call">
+                            <i class='fas fa-mobile-alt'></i>
+                            <h4>Call :</h4>
+                            <p>+1 5589 55488 55s</p>
+                        </div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13719.387270160843!2d76.69911865!3d30.7227065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1676737177470!5m2!1sen!2sin"
+                            width="100%" height="290" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+                    </div>
+                </div>
+                <div class="col-7 contact-tab">
+                    <div class="contact-right contact-r">
+                        <form action="">
+                            <div class="row form">
+                                <div class="col-6 form-name">
+                                    <label for="name">Your Name</label><br>
+                                    <input type="text" name="name" id="name" required>
+                                </div>
+                                <div class="col-6 form-name">
+                                    <label for="email">Your Email</label><br>
+                                    <input type="text" name="email" id="email" required>
+                                </div>
+                            </div>
+                            <div class="form-subject form-name">
+                                <label for="sub">Subject</label>
+                                <input type="text" name="subject" id="sub">
+                            </div>
+                            <div class="form-text">
+                                <label for="">Message</label><br>
+                                <textarea name="" id="" rows="13">
+
+                            </textarea>
+                            </div>
+                            <div class="form-button">
+                                <button class="form-btn" type="submit">Send Message</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="news greyBg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 newspara news-tab">
+                    <h2>Join Our Newsletter</h2>
+                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    <form>
+                        <input type="email" name="email">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-3 footer-links  footer-tab">
+                    <h4>ARSHA</h4>
+                    <p>A108 Adam Street<br>
+                        New York, NY 535022<br>
+                        United States</p><br>
+                    <strong>Phone :</strong>
+                    +1 5589 55488 55<br>
+                    <strong>Email :</strong>
+                    info@example.com
+                </div>
+                <div class="col-3 footer-links  footer-tab">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><i class='fas'>&#xf105;</i> <a href=""> Home</a></li>
+                        <li><i class='fas'>&#xf105;</i> <a href=""> About us</a></li>
+                        <li><i class='fas'>&#xf105;</i> <a href=""> Service</a></li>
+                        <li><i class='fas'>&#xf105;</i> <a href=""> Terms of service</a></li>
+                        <li><i class='fas'>&#xf105;</i> <a href=""> Privacy policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 footer-links  footer-tab">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><i class='fas'>&#xf105;</i><a href=""> Web Design</a></li>
+                        <li><i class='fas'>&#xf105;</i><a href=""> Web Development</a></li>
+                        <li><i class='fas'>&#xf105;</i><a href=""> Product Management</a></li>
+                        <li><i class='fas'>&#xf105;</i><a href=""> Marketing</a></li>
+                        <li><i class='fas'>&#xf105;</i><a href=""> Graphic Design</a></li>
+                    </ul>
+                </div>
+                <div class="col-3 footer-links footer-tab">
+                    <h3>Our Social Network</h3>
+                    <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+                    <div class="team-social-footer ">
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-skype"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="copyright clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 copyright-tab">
+        <div class="copy">
+            © Copyright <strong> <span>VINAY</span></strong>. All Rights Reserved
+        </div>
+    </div>
+    <div class="col-8 copyright-tab">
+        <div class="credit">
+            Designed by <a href="">BootstrapMade</a>
+        </div>
+        </div>
+    </div>
+</div>
     </section>
     <script>
         // When the user scrolls the page, execute myFunction
